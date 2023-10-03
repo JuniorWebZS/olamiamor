@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♡1mes♡</title>
+    <style>
+        body {
+            font-family: "cursive", cursive, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #ff69b4;
+            padding: 20px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+        }
+        .contenido {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .imagenes {
+            display: flex;
+            flex-wrap: wrap; /* Permite que las imágenes se envuelvan a la siguiente fila cuando no haya espacio en la actual */
+            justify-content: center; /* Centra horizontalmente las imágenes */
+            gap: 10px; /* Espacio entre las imágenes */
+        }
+        .imagen {
+            width: calc(33.33% - 10px); /* 33.33% para tres imágenes en una fila, resta el espacio entre ellas */
+            margin-bottom: 10px; /* Espacio inferior entre las filas de imágenes */
+            overflow: hidden; /* Evita que las imágenes se desborden */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .boton-si {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .boton-no {
+            background-color: #ff9469;
+ 
+        }
+
+        .boton-si:hover {
+            transform: translateX(200px) translateY(200px); /* Mueve el botón 10px hacia la derecha y abajo en hover */
+        }
+        .boton-si:active {
+            transform: none;
+            pointer-events: none;
+        }
+
+        /* Estilos para el cuadro de diálogo modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+        .modal-contenido {
+            background-color: white;
+            width: 80%;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .notitas {
+            display: none;
+        }
+        .notita {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .notita img {
+            max-width: 100%;
+            height: auto;
+        }
+
+         /* Estilos responsivos */
+         @media screen and (max-width: 768px) {
+            .contenido {
+                padding: 10px;
+            }
+            .imagenes {
+                flex-direction: column;
+            }
+            .imagen {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌻Feliz Primer Mes Miamor🌻</h1>
+    </header>
+    <div class="contenido" id="contenido-aniversario">
+        <h2>Momentos Juntos❤️</h2>
+        <p>No puedo creer lo rápido que ha pasado este primer mes juntos, pero cada momento a tu lado ha sido mágico, espero te guste este detalle, gracias por todo Natalia♡.</p>
+        <div class="imagenes">
+            <div class="imagen">
+                <img src="img/01.jpg" alt="Imagen 1">
+            </div>
+            <div class="imagen">
+                <img src="img/02.jpg" alt="Imagen 2">
+            </div>
+            <div class="imagen">
+                <img src="img/03.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/04.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/05.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/06.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/07.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/08.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/09.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/10.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/11.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/12.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/13.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/14.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/15.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/16.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/17.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/18.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/19.jpg" alt="Imagen 3">
+            </div>
+            <div class="imagen">
+                <img src="img/20.jpg" alt="Imagen 3">
+            </div>
+           
+        </div>
+        <button onclick="mostrarNotitas()">Ver Notitas</button>
+    </div>
+
+    <div class="contenido" id="contenido-notitas">
+        <div class="notitas" id="notita1">
+        </div>
+        <div class="notitas" id="notita2">
+            <h3>Let's have an adventure, head in the clouds but my gravity centered. Touch my neck and I'll touch yours.❤️</h3>
+            <h3>(Sweater Weather)</h3>
+            <img src="img/chimmy-bt21.gif" alt="GIF 2">
+        </div>
+        <div class="notitas" id="notita2">
+            <h3>Cada beso tuyo es mi debilidad.💋</h3>
+            <img src="img/bt21KOALA.gif" alt="GIF 2">
+        </div>
+        <div class="notitas" id="notita2">
+            <h3>Tus abrazos son mi lugar feliz.🤗</h3>
+            <img src="img/bt21.gif" alt="GIF 2">
+        </div>
+        <div class="notitas" id="notita2">
+            <h3>Te extraño incluso cuando estás a mi lado♡.</h3>
+            <img src="img/bt21-cute.gif" alt="GIF 2">
+        </div>
+
+      
+        <button onclick="mostrarSiguiente()">Siguiente Notita</button>
+    </div>
+
+    <div class="contenido" id="contenido-nuevo-apartado">
+        <h2>Calañaaa</h2>
+        <p>¿No te olvidas de algo?😚</p>
+        <button onclick="mostrarNuevoApartado()">Siguiente</button>
+    </div>
+
+    <div class="contenido" id="contenido-nuevo-apartado2">
+        <h1>¿Me Amas?💗</h1>
+        <button class="boton-si" id="boton-si" onmouseover="moverBoton()" onmouseout="regresarBoton()">SI</button>
+        <button class="boton-no" onclick="mostrarNota()">NO</button>
+        <div>
+            <img src="img/cute-cat.gif" alt="GIF 2">
+        </div>
+    </div>
+
+   <!-- Primer cuadro de diálogo modal -->
+   <div class="modal" id="modal-nota-1">
+    <div class="modal-contenido">
+        <h2>¿Por qué no me amas?</h2>
+        <p>Yo creía que sí me amabas...</p>
+        <div>
+            <img src="img/cute-dog.gif" alt="GIF 2">
+        </div>
+        <button onclick="cerrarNota(1)">Cerrar</button>
+    </div>
+</div>
+
+<!-- Segundo cuadro de diálogo modal -->
+<div class="modal" id="modal-nota-2">
+    <div class="modal-contenido">
+        <h2>Bromita Miamor, se que me amas muchooo😚</h2>
+        <p>Yo también te amooo mucho mucho muchooooo...❤️</p>
+        <div>
+            <img src="img/one-piece-anime.gif" alt="GIF 2">
+        </div>
+        <button onclick="cerrarNota(2)">Cerrar</button>
+    </div>
+</div>
+
+<div class="modal" id="modal-nota-3">
+    <div class="modal-contenido">
+        <h2>Nota especial 2</h2>
+        <p>Esta es la segunda nota especial que aparece después de cerrar la primera.</p>
+        <button onclick="cerrarNota(3)">Cerrar</button>
+    </div>
+</div>
+
+    <script>
+        let indiceNotita = 1;
+        const contenidoAniversario = document.getElementById('contenido-aniversario');
+        const contenidoNotitas = document.getElementById('contenido-notitas');
+        const nuevoApartado = document.getElementById('contenido-nuevo-apartado');
+        const nuevoApartado2 = document.getElementById('contenido-nuevo-apartado2');
+        const botonSi = document.getElementById('boton-si');
+        
+        contenidoNotitas.style.display = 'none';
+        nuevoApartado.style.display = 'none';
+        nuevoApartado2.style.display = 'none';
+
+        function mostrarNotitas() {
+            contenidoAniversario.style.display = 'none';
+            contenidoNotitas.style.display = 'block';
+        }
+
+        function mostrarSiguiente() {
+            const notitas = document.querySelectorAll('.notitas');
+            if (indiceNotita < notitas.length) {
+                notitas[indiceNotita - 1].style.display = 'none';
+                notitas[indiceNotita].style.display = 'block';
+                indiceNotita++;
+            } else {
+                // Todas las notitas han sido vistas, mostramos el nuevo apartado
+                contenidoNotitas.style.display = 'none';
+                nuevoApartado.style.display = 'block';
+            }
+        }
+
+        function mostrarNuevoApartado() {
+            nuevoApartado.style.display = 'none';
+            nuevoApartado2.style.display = 'block';
+        }
+
+        function moverBoton() {
+            // Mueve el botón aleatoriamente en hover
+            const randomX = Math.floor(Math.random() * 500) - 100; // Valores entre -10 y 10
+            const randomY = Math.floor(Math.random() * 500) - 100; // Valores entre -10 y 10
+            botonSi.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        }
+
+        function regresarBoton() {
+            // Regresa el botón a su posición original cuando el puntero se aleja
+            botonSi.style.transform = 'translate(0)';
+        }
+
+        function mostrarNota() {
+            // Muestra el cuadro de diálogo modal con la nota
+            const modalNota1 = document.getElementById('modal-nota-1');
+            modalNota1.style.display = 'block';
+        }
+
+
+        function cerrarNota(numero) {
+            // Cierra el cuadro de diálogo modal con la nota
+            const modalNota1 = document.getElementById('modal-nota-1');
+            const modalNota2 = document.getElementById('modal-nota-2');
+            if (numero === 1) {
+                modalNota1.style.display = 'none';
+                // Mostrar el segundo cuadro de diálogo modal después de cerrar el primero
+                modalNota2.style.display = 'block';
+            } else if (numero === 2) {
+                modalNota2.style.display = 'none';
+            }
+            
+        }
+    </script>
+</body>
+</html>
